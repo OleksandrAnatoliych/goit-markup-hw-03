@@ -10,10 +10,22 @@ body {
 ul,
 ol {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /*-- #region header */
@@ -21,7 +33,14 @@ a {
 .header {
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo {
@@ -34,17 +53,27 @@ a {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .logo-span {
   color: #2e2f42;
 }
 
 .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav-item {
 }
 
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -59,10 +88,20 @@ a {
 
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .adress-item {
+  
 }
 .adress-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
