@@ -22,15 +22,33 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+.img {
+  display: block;
+}
+
 /*-- #region header */
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -116,18 +134,30 @@ a {
 
 /* #region hero */
 .hero {
+  padding: 188px 0;
   background-color: #2e2f42;
 }
+
+.hero-container {
+  display: block;
+  align-content: center;
+}
 .hero-title {
+  display: block;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
-  border: 1px dashed #9747ff;
+  display: block;
+  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -135,6 +165,12 @@ a {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -143,13 +179,26 @@ a {
 /* #endregion hero */
 
 /* #region section 1 */
-
+.feature-cotainer {
+padding: 120px 15px;
+}
 .feature {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.feature-item {
+  width: calc( ( 100% - 72px ) / 4 );
 }
 
 .feature-text {
@@ -161,12 +210,21 @@ a {
 
 /* #region section 2 */
 .ourteam {
+   padding-top: 120px; 
+   padding-bottom: 120px;
   text-align: center;
   background-color: #f4f4fd;
 }
 
 .ourteam-link {
+  display: flex;
   background-color: #fff;
+  gap: 24px;
+}
+
+.ourteam-item {
+  width: calc( ( 100% - 72px ) / 4 );
+   border-radius: 0px 0px 4px 4px;
 }
 
 .ourteam-title {
@@ -176,6 +234,11 @@ a {
   letter-spacing: 0.02em;
    text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.container-ourteam-name {
+  padding: 32px 0;
 }
 
 .ourteam-name {
@@ -184,6 +247,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .ourteam-text {
