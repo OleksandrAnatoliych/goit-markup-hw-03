@@ -181,9 +181,6 @@ img {
   padding: 120px 0;
 }
 
-.feature-cotainer {
-  padding: 120px 15px;
-}
 .feature-title {
   font-weight: 500;
   font-size: 20px;
@@ -220,13 +217,14 @@ img {
 
 .ourteam-list {
   display: flex;
-  background-color: #fff;
+  
   gap: 24px;
 }
 
 .ourteam-item {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
 }
 
 .ourteam-title {
@@ -296,14 +294,12 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
 }
 /* #endregion section 3 */
 
